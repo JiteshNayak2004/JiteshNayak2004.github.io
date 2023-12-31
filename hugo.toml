@@ -42,22 +42,22 @@ style = "github-dark"
   name = "Github"
   icon = "fa fa-github fa-2x"
   weight = 1
-  url = "https://github.com/skudlur/"
+  url = "https://github.com/JiteshNayak2004/"
 [[params.social]]
   name = "Gitlab"
   icon = "fa fa-linkedin fa-2x"
   weight = 2
-  url = "https://www.linkedin.com/in/suhas-kudlur-viswanath-33aa971ba/"
+  url = "https://www.linkedin.com/in/jitesh-nayak-65986b1b2/"
 [[params.social]]
   name = "Twitter"
   icon = "fa fa-twitter fa-2x"
   weight = 3
-  url = "https://twitter.com/s_kudlur/"
+  url = "https://twitter.com/lain_2004"
 [[params.social]]
   name = "Resume"
   icon = "fa fa-file-text-o fa-2x"
   weight = 4
-  url = "https://drive.google.com/file/d/1DBY8-oSy4RLhVdTBEZwHnj-goHTPedY1/view?usp=sharing"
+  url = "https://drive.google.com/file/d/16KIiAJKO1fVjtx-V4osdQRTYXGZZrr19/view?usp=sharing"
 
 # Menu links
 [[menu.main]]
