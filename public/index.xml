@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HOME</title>
+    <link>https://example.org/</link>
+    <description>Recent content on HOME</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 30 Dec 2023 21:38:18 +0530</lastBuildDate>
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>convolution a systems perspective</title>
+      <link>https://example.org/posts/convolution/</link>
+      <pubDate>Sat, 30 Dec 2023 21:38:18 +0530</pubDate>
+      <guid>https://example.org/posts/convolution/</guid>
+      <description>introduction Link to heading Convolution, a versatile mathematical operation, has become a go-to tool in various domains, from image processing to Deep learning. However, its roots trace back to its initial application in system analysis and this blog is my attempt on explaining the premise as to why was convolution required in the first place and the thought process on how it was developed&#xA;modelling systems Link to heading Think of a system as any device or setup that changes or controls something.</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://example.org/about/</link>
+      <pubDate>Fri, 19 May 2023 21:11:06 +0530</pubDate>
+      <guid>https://example.org/about/</guid>
+      <description>Hey there, world! I&amp;rsquo;m Jitesh Kumar Nayak, a 3rd-year undergrad at PES University. I enjoy learning and reading about everything tech. Currently, I am interested in computer architecture and analog/RFIC design and am actively trying to build cool projects in these areas.&#xA;When I&amp;rsquo;m not working, I&amp;rsquo;m usually speed cubing my way to a new personal best. I&amp;rsquo;m also currently learning to solve the Rubik&amp;rsquo;s cube blindfolded and making steady progress (like, seriously, who needs to see?</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/projects/</guid>
+      <description>Projects Link to heading the below are some of the projects i&amp;rsquo;ve built as a part of courses i had taken at university and hackathons i was a part of.&#xA;Router Placement (Python, Flutter) Link to heading GitHub Repository&#xA;This project aims to determine the most efficient placement of routers in a given area to ensure optimal Wi-Fi coverage. The algorithm takes into account factors such as signal strength, interference, and user density to recommend the best placement for the routers.</description>
+    </item>
+  </channel>
+</rss>

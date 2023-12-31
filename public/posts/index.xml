@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on HOME</title>
+    <link>https://example.org/posts/</link>
+    <description>Recent content in Posts on HOME</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 30 Dec 2023 21:38:18 +0530</lastBuildDate>
+    <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>convolution a systems perspective</title>
+      <link>https://example.org/posts/convolution/</link>
+      <pubDate>Sat, 30 Dec 2023 21:38:18 +0530</pubDate>
+      <guid>https://example.org/posts/convolution/</guid>
+      <description>introduction Link to heading Convolution, a versatile mathematical operation, has become a go-to tool in various domains, from image processing to Deep learning. However, its roots trace back to its initial application in system analysis and this blog is my attempt on explaining the premise as to why was convolution required in the first place and the thought process on how it was developed&#xA;modelling systems Link to heading Think of a system as any device or setup that changes or controls something.</description>
+    </item>
+  </channel>
+</rss>
