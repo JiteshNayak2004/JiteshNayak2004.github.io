@@ -38,7 +38,7 @@ Convolution, a versatile mathematical operation, has become a go-to tool in vari
 
 Think of the Impulse signal as a short pulse with amplitude being infinity at t=0 b
 
-{{< figure src="/images/image-1.png" alt="Alt text" width="480" height="300" >}}
+{{< figure src="/images/convolution/image-1.png" alt="Alt text" width="480" height="300" >}}
 
 ```
 At t = 0: δ(t) = ∞ (infinite value at t = 0)
@@ -54,14 +54,14 @@ Consider a narrow rectangular pulse of width A and height 1/A, so that the area 
 
 on increasing. Ultimately when A=0, 1/A=infinity and this results in a pulse of infinite magnitude. It is very clear from this, that the Unit impulse function has infinite magnitude at t = 0
 
-{{< figure src="/images/image-2.png" alt="Alt text" width="480" height="300" >}}
+{{< figure src="/images/convolution/image-2.png" alt="Alt text" width="480" height="300" >}}
 
 ## SOLUTION
 
 now why did we need to know about this function what is so special about it this can be better understood by the image below
 
-{{< figure src="/images/image-3.png" alt="Alt text" width="480" height="300" >}}
-{{< figure src="/images/image-4.png" alt="Alt text" width="480" height="300" >}}
+{{< figure src="/images/convolution/image-3.png" alt="Alt text" width="480" height="300" >}}
+{{< figure src="/images/convolution/image-4.png" alt="Alt text" width="480" height="300" >}}
 
 
 
@@ -69,13 +69,13 @@ now why did we need to know about this function what is so special about it this
 2. By figuring out how the system responds to a Unit Impulse signal, we can predict the system response to any input signal. The response of a system to a Unit Impulse signal is called the Unit Impulse Response (denoted by h(t))
 3. Because these are LTI systems, the output is scaled and shifted by the same factor as the input Impulse signal. So the output to any input can be obtained by summing up the scaled and shifted outputs(impulse response's)
 
-{{< figure src="/images/image-5.png" alt="Alt text" width="700" height="400" >}}
+{{< figure src="/images/convolution/image-5.png" alt="Alt text" width="700" height="400" >}}
 
 now to sum up these infinite scaled and shifted impulse responses means we multiply the amplitude of the input x(tau) with the shifted output h(t-tau) and integrate it where tau  varies negative infinity to positive infinity as the input signal is made of infinite impulse signals
 
 and woila we get the convolution operation
 
-{{< figure src="/images/image-6.png" alt="Alt text" width="1200" height="200" >}}
+{{< figure src="/images/convolution/image-6.png" alt="Alt text" width="1200" height="200" >}}
 
 it's a wrap
 

@@ -224,7 +224,7 @@ modelling systems Link to heading Think of a system as any device or setup that 
   </a>
 </h2>
 <p>Think of the Impulse signal as a short pulse with amplitude being infinity at t=0 b</p>
-<figure><img src="/images/image-1.png"
+<figure><img src="/images/convolution/image-1.png"
          alt="Alt text" width="480" height="300"/>
 </figure>
 
@@ -236,7 +236,7 @@ The name comes from the fact that the area of an impulse function is one</p>
 <p><strong>Reason behind area being 1</strong></p>
 <p>Consider a narrow rectangular pulse of width A and height 1/A, so that the area under the pulse = 1. Now if we go on reducing the width A and maintain the area as unity, then the height 1/A will go</p>
 <p>on increasing. Ultimately when A=0, 1/A=infinity and this results in a pulse of infinite magnitude. It is very clear from this, that the Unit impulse function has infinite magnitude at t = 0</p>
-<figure><img src="/images/image-2.png"
+<figure><img src="/images/convolution/image-2.png"
          alt="Alt text" width="480" height="300"/>
 </figure>
 
@@ -248,11 +248,11 @@ The name comes from the fact that the area of an impulse function is one</p>
   </a>
 </h2>
 <p>now why did we need to know about this function what is so special about it this can be better understood by the image below</p>
-<p><figure><img src="/images/image-3.png"
+<p><figure><img src="/images/convolution/image-3.png"
          alt="Alt text" width="480" height="300"/>
 </figure>
 
-<figure><img src="/images/image-4.png"
+<figure><img src="/images/convolution/image-4.png"
          alt="Alt text" width="480" height="300"/>
 </figure>
 </p>
@@ -261,13 +261,13 @@ The name comes from the fact that the area of an impulse function is one</p>
 <li>By figuring out how the system responds to a Unit Impulse signal, we can predict the system response to any input signal. The response of a system to a Unit Impulse signal is called the Unit Impulse Response (denoted by h(t))</li>
 <li>Because these are LTI systems, the output is scaled and shifted by the same factor as the input Impulse signal. So the output to any input can be obtained by summing up the scaled and shifted outputs(impulse response&rsquo;s)</li>
 </ol>
-<figure><img src="/images/image-5.png"
+<figure><img src="/images/convolution/image-5.png"
          alt="Alt text" width="700" height="400"/>
 </figure>
 
 <p>now to sum up these infinite scaled and shifted impulse responses means we multiply the amplitude of the input x(tau) with the shifted output h(t-tau) and integrate it where tau  varies negative infinity to positive infinity as the input signal is made of infinite impulse signals</p>
 <p>and woila we get the convolution operation</p>
-<figure><img src="/images/image-6.png"
+<figure><img src="/images/convolution/image-6.png"
          alt="Alt text" width="1200" height="200"/>
 </figure>
 
@@ -299,7 +299,9 @@ The name comes from the fact that the area of an impulse function is one</p>
   <section class="container">
     ©
     
-    2023
+      2023 -
+    
+    2024
      Jitesh Kumar Nayak 
     ·
     
