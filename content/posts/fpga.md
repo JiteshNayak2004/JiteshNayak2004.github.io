@@ -1,5 +1,4 @@
 +++ 
-draft = true
 date = 2024-02-17T23:40:46+05:30
 title = "FPGA-internals"
 description = ""
