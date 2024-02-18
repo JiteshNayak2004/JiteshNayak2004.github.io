@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  FPGA-internals · HOME
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Jitesh Kumar Nayak">
+<meta name="description" content="well a lot of you must have heard of the term fpga and with some digging and youtube videos u get a picture that it is basically a minecraft equivalent for hardware engineers
+with an fpga you can think of any digital ckt that does a certain functionality describe the circuit in something called a HDL (hardware description language) dump the code on the fpga and voila the fpga builds the ckt in real time and let&rsquo;s u play around with it the best part being u can erase your existing design and dump some new hdl to simulate another digital ckt">
+<meta name="keywords" content="personal">
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="FPGA-internals"/>
+<meta name="twitter:description" content="well a lot of you must have heard of the term fpga and with some digging and youtube videos u get a picture that it is basically a minecraft equivalent for hardware engineers
+with an fpga you can think of any digital ckt that does a certain functionality describe the circuit in something called a HDL (hardware description language) dump the code on the fpga and voila the fpga builds the ckt in real time and let&rsquo;s u play around with it the best part being u can erase your existing design and dump some new hdl to simulate another digital ckt"/>
+
+<meta property="og:title" content="FPGA-internals" />
+<meta property="og:description" content="well a lot of you must have heard of the term fpga and with some digging and youtube videos u get a picture that it is basically a minecraft equivalent for hardware engineers
+with an fpga you can think of any digital ckt that does a certain functionality describe the circuit in something called a HDL (hardware description language) dump the code on the fpga and voila the fpga builds the ckt in real time and let&rsquo;s u play around with it the best part being u can erase your existing design and dump some new hdl to simulate another digital ckt" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.org/posts/fpga/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-02-17T23:40:46+05:30" />
+<meta property="article:modified_time" content="2024-02-17T23:40:46+05:30" />
+
+
+
+
+
+<link rel="canonical" href="https://example.org/posts/fpga/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.e1bdf152d93b060b06ba5d496486ed9c201a8b95d335e035beb5faebe3b61cad.css" integrity="sha256-4b3xUtk7BgsGul1JZIbtnCAai5XTNeA1vrX66&#43;O2HK0=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      HOME
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://example.org/posts/fpga/">
+              FPGA-internals
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2024-02-17T23:40:46&#43;05:30">
+                February 17, 2024
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>well a lot of you must have heard of the term fpga and with some digging and youtube videos u get a picture that it is basically a minecraft equivalent for hardware engineers</p>
+<p>with an fpga you can think of any digital ckt that does a certain functionality describe the circuit in something called a HDL (hardware description language) dump the code on the fpga and voila the fpga builds the ckt in real time and let&rsquo;s u play around with it the best part being u can erase your existing design and dump some new hdl to simulate another digital ckt</p>
+<p><code>why should you care?? </code></p>
+<p>The latest fpga&rsquo;s can boot linux on a cpu core that is completely written by you  from scratch how cool is that !!!!</p>
+<p>well that&rsquo;s the basic gist of what an fpga is but let&rsquo;s dive deep into how an fpga is built and how this magic has come to be</p>
+<h2 id="architecture">
+  ARCHITECTURE
+  <a class="heading-link" href="#architecture">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>so the complete brief architecture can be divided into 3 major blocks and don&rsquo;t stress abt the terminologies we&rsquo;ll go thru it as we progress</p>
+<ol>
+<li>
+<p>configurable logic block (CLB)</p>
+</li>
+<li>
+<p>interconnect fabric that connects these (CLB)</p>
+<p>(interconnect fabric= fancy name for programmable wires that connect the CLB&rsquo;s)</p>
+</li>
+<li>
+<p>i/o blocks that are connected to CLB&rsquo;S thru interconnect fabric</p>
+</li>
+</ol>
+<figure><img src="/images/fpga/img1.png"
+         alt="Alt text" width="600" height="500"/>
+</figure>
+
+<h2 id="clb-configurable-logic-block">
+  CLB (configurable logic block)
+  <a class="heading-link" href="#clb-configurable-logic-block">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<figure><img src="/images/fpga/img2.png"
+         alt="Alt text" width="480" height="300"/>
+</figure>
+
+<p>the above picture descirbes what a clb basically is it&rsquo;s a connection of  an lut a mux and a flip flop we need a flip flop in CLB to implement sequential logic and another mux to select b/w the combinational and sequential o/p</p>
+<h3 id="but-whats-an-lut">
+  but what&rsquo;s an LUT??
+  <a class="heading-link" href="#but-whats-an-lut">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>it&rsquo;s nothing but a 1 bit wide ram that is read by a mux to implement any digital logic the below example will give u a clear idea</p>
+<figure><img src="/images/fpga/img3.png"
+          alt="Alt text" width="650" height="600"/>
+ </figure>
+
+<p>so the truth table has 16 o/ps that is mapped to an sram and now we need
+a multiplexer with 4 ips to implement the boolean function</p>
+<h2 id="interconnect-fabric">
+  INTERCONNECT FABRIC
+  <a class="heading-link" href="#interconnect-fabric">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<blockquote>
+<p>now here is where the magic happens and the complexity arises there are various
+design constraints in connecting these CLB&rsquo;S and various proposed architectures
+in solving them in this blog I&rsquo;ll be discussing the island style routing architecture</p>
+</blockquote>
+<p>As discussed earlier, in an FPGA, the computing functionality is provided by its programmable logic blocks and these blocks connect to each other through a programmable routing network called the interconnect fabric.</p>
+<p>The routing interconnect of an FPGA consists of wires and programmable switches that form the required connection. These programmable switches are configured using the programmable technology</p>
+<h3 id="island-style-routing-architecture">
+  ISLAND STYLE ROUTING ARCHITECTURE
+  <a class="heading-link" href="#island-style-routing-architecture">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<figure><img src="/images/fpga/img4.png"
+         alt="Alt text" width="600" height="500"/>
+</figure>
+
+<p>in this architecture the  FPGA routing network consists of horizontal and vertical routing tracks which are interconnected through switch boxes (SB). Logic blocks are connected to the routing network through connection boxes (CB)</p>
+<h4 id="connection-box">
+  CONNECTION BOX
+  <a class="heading-link" href="#connection-box">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<figure><img src="/images/fpga/img5.png"
+          alt="Alt text" width="480" height="300"/>
+ </figure>
+
+<p>well a connection box is basically a block that connects the CLB to the routing network</p>
+<h4 id="switch-box">
+  SWITCH BOX
+  <a class="heading-link" href="#switch-box">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<ul>
+<li>
+<p>a switch box is used to connect the vertical and horizontal routing tracks</p>
+</li>
+<li>
+<p>now there are 2 types of switch boxes uni directional and bi directional</p>
+</li>
+<li>
+<p>uni directional allows signal to flow in one direction</p>
+</li>
+<li>
+<p>bi directional allows signals to flow in both the directions</p>
+<p>the figures for both are given below</p>
+</li>
+</ul>
+<ol>
+<li>uni directional</li>
+</ol>
+<figure><img src="/images/fpga/img6.png"
+         alt="Alt text" width="480" height="600"/>
+</figure>
+
+<ol start="2">
+<li>bi directional</li>
+</ol>
+<figure><img src="/images/fpga/img7.png"
+          alt="Alt text" width="480" height="600"/>
+ </figure>
+
+<h2 id="io-blocks">
+  I/O BLOCKS
+  <a class="heading-link" href="#io-blocks">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>i/o ports in an fpga are of various kind and have a lot of customization options</p>
+<p>modern fpga&rsquo;s have slots for vga,audio/video sd card and many more some differentiating properties of fpga i/o blocks are below</p>
+<ul>
+<li>
+<p>Highly Configurable pins for input, output, or bidirectional signals.</p>
+</li>
+<li>
+<p>Adjustable parameters like voltage levels, slew rate at ip and op ports.</p>
+</li>
+<li>
+<p>Offers differential signaling, high-speed transceivers, ADCs, DACs, etc.</p>
+</li>
+<li>
+<p>Organizes I/O blocks into banks for better signal management.</p>
+</li>
+<li>
+<p>there are also dedicated custom PLL blocks for custom clock signals generation</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>so yea with this the blog ends thou this is a very rudimentary picture of the internals of an fpga and there is so much more the purpose of the blog was to give u guys a peek into the exciting world of how fpga&rsquo;s works.</p>
+<p>thanks for sticking thru and would love to hear from you regarding any feedback or queries</p>
+<p>ad`ios..</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2023 -
+    
+    2024
+     Jitesh Kumar Nayak 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

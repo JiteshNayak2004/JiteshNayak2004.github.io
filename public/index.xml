@@ -6,8 +6,15 @@
     <description>Recent content on HOME</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 Dec 2023 21:38:18 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 17 Feb 2024 23:40:46 +0530</lastBuildDate>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FPGA-internals</title>
+      <link>https://example.org/posts/fpga/</link>
+      <pubDate>Sat, 17 Feb 2024 23:40:46 +0530</pubDate>
+      <guid>https://example.org/posts/fpga/</guid>
+      <description>well a lot of you must have heard of the term fpga and with some digging and youtube videos u get a picture that it is basically a minecraft equivalent for hardware engineers&#xA;with an fpga you can think of any digital ckt that does a certain functionality describe the circuit in something called a HDL (hardware description language) dump the code on the fpga and voila the fpga builds the ckt in real time and let&amp;rsquo;s u play around with it the best part being u can erase your existing design and dump some new hdl to simulate another digital ckt</description>
+    </item>
     <item>
       <title>convolution a systems perspective</title>
       <link>https://example.org/posts/convolution/</link>
