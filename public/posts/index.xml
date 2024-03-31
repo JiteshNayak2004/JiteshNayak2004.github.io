@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on HOME</title>
-    <link>https://example.org/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on HOME</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 17 Feb 2024 23:40:46 +0530</lastBuildDate>
-    <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FPGA-internals</title>
-      <link>https://example.org/posts/fpga/</link>
+      <link>http://localhost:1313/posts/fpga/</link>
       <pubDate>Sat, 17 Feb 2024 23:40:46 +0530</pubDate>
-      <guid>https://example.org/posts/fpga/</guid>
+      <guid>http://localhost:1313/posts/fpga/</guid>
       <description>well a lot of you must have heard of the term fpga and with some digging and youtube videos u get a picture that it is basically a minecraft equivalent for hardware engineers&#xA;with an fpga you can think of any digital ckt that does a certain functionality describe the circuit in something called a HDL (hardware description language) dump the code on the fpga and voila the fpga builds the ckt in real time and let&amp;rsquo;s u play around with it the best part being u can erase your existing design and dump some new hdl to simulate another digital ckt</description>
     </item>
     <item>
       <title>convolution a systems perspective</title>
-      <link>https://example.org/posts/convolution/</link>
+      <link>http://localhost:1313/posts/convolution/</link>
       <pubDate>Sat, 30 Dec 2023 21:38:18 +0530</pubDate>
-      <guid>https://example.org/posts/convolution/</guid>
+      <guid>http://localhost:1313/posts/convolution/</guid>
       <description>introduction Link to heading Convolution, a versatile mathematical operation, has become a go-to tool in various domains, from image processing to Deep learning. However, its roots trace back to its initial application in system analysis and this blog is my attempt on explaining the premise as to why was convolution required in the first place and the thought process on how it was developed&#xA;modelling systems Link to heading Think of a system as any device or setup that changes or controls something.</description>
     </item>
   </channel>

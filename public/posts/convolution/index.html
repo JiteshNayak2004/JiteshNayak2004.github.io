@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <title>
   convolution a systems perspective · HOME
 </title>
@@ -25,15 +25,14 @@ modelling systems Link to heading Think of a system as any device or setup that 
 <meta property="og:description" content="introduction Link to heading Convolution, a versatile mathematical operation, has become a go-to tool in various domains, from image processing to Deep learning. However, its roots trace back to its initial application in system analysis and this blog is my attempt on explaining the premise as to why was convolution required in the first place and the thought process on how it was developed
 modelling systems Link to heading Think of a system as any device or setup that changes or controls something." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.org/posts/convolution/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="http://localhost:1313/posts/convolution/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-12-30T21:38:18+05:30" />
 <meta property="article:modified_time" content="2023-12-30T21:38:18+05:30" />
 
 
 
 
-
-<link rel="canonical" href="https://example.org/posts/convolution/">
+<link rel="canonical" href="http://localhost:1313/posts/convolution/">
 
 
 <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
@@ -41,7 +40,7 @@ modelling systems Link to heading Think of a system as any device or setup that 
 
   
   
-  <link rel="stylesheet" href="/css/coder.min.e1bdf152d93b060b06ba5d496486ed9c201a8b95d335e035beb5faebe3b61cad.css" integrity="sha256-4b3xUtk7BgsGul1JZIbtnCAai5XTNeA1vrX66&#43;O2HK0=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
 
 
 
@@ -51,7 +50,7 @@ modelling systems Link to heading Think of a system as any device or setup that 
   
     
     
-    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
   
 
 
@@ -136,7 +135,7 @@ modelling systems Link to heading Think of a system as any device or setup that 
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="https://example.org/posts/convolution/">
+            <a class="title-link" href="http://localhost:1313/posts/convolution/">
               convolution a systems perspective
             </a>
           </h1>
@@ -225,7 +224,7 @@ modelling systems Link to heading Think of a system as any device or setup that 
 </h2>
 <p>Think of the Impulse signal as a short pulse with amplitude being infinity at t=0 b</p>
 <figure><img src="/images/convolution/image-1.png"
-         alt="Alt text" width="480" height="300"/>
+    alt="Alt text" width="480" height="300">
 </figure>
 
 <pre tabindex="0"><code>At t = 0: δ(t) = ∞ (infinite value at t = 0)
@@ -237,7 +236,7 @@ The name comes from the fact that the area of an impulse function is one</p>
 <p>Consider a narrow rectangular pulse of width A and height 1/A, so that the area under the pulse = 1. Now if we go on reducing the width A and maintain the area as unity, then the height 1/A will go</p>
 <p>on increasing. Ultimately when A=0, 1/A=infinity and this results in a pulse of infinite magnitude. It is very clear from this, that the Unit impulse function has infinite magnitude at t = 0</p>
 <figure><img src="/images/convolution/image-2.png"
-         alt="Alt text" width="480" height="300"/>
+    alt="Alt text" width="480" height="300">
 </figure>
 
 <h2 id="solution">
@@ -249,11 +248,11 @@ The name comes from the fact that the area of an impulse function is one</p>
 </h2>
 <p>now why did we need to know about this function what is so special about it this can be better understood by the image below</p>
 <p><figure><img src="/images/convolution/image-3.png"
-         alt="Alt text" width="480" height="300"/>
+    alt="Alt text" width="480" height="300">
 </figure>
 
 <figure><img src="/images/convolution/image-4.png"
-         alt="Alt text" width="480" height="300"/>
+    alt="Alt text" width="480" height="300">
 </figure>
 </p>
 <ol>
@@ -262,13 +261,13 @@ The name comes from the fact that the area of an impulse function is one</p>
 <li>Because these are LTI systems, the output is scaled and shifted by the same factor as the input Impulse signal. So the output to any input can be obtained by summing up the scaled and shifted outputs(impulse response&rsquo;s)</li>
 </ol>
 <figure><img src="/images/convolution/image-5.png"
-         alt="Alt text" width="700" height="400"/>
+    alt="Alt text" width="700" height="400">
 </figure>
 
 <p>now to sum up these infinite scaled and shifted impulse responses means we multiply the amplitude of the input x(tau) with the shifted output h(t-tau) and integrate it where tau  varies negative infinity to positive infinity as the input signal is made of infinite impulse signals</p>
 <p>and woila we get the convolution operation</p>
 <figure><img src="/images/convolution/image-6.png"
-         alt="Alt text" width="1200" height="200"/>
+    alt="Alt text" width="1200" height="200">
 </figure>
 
 <p>it&rsquo;s a wrap</p>
@@ -316,7 +315,7 @@ The name comes from the fact that the area of an impulse function is one</p>
 
   
   
-  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  <script src="/js/coder.js"></script>
   
 
   

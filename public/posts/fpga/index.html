@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <title>
   FPGA-internals · HOME
 </title>
@@ -25,15 +25,14 @@ with an fpga you can think of any digital ckt that does a certain functionality 
 <meta property="og:description" content="well a lot of you must have heard of the term fpga and with some digging and youtube videos u get a picture that it is basically a minecraft equivalent for hardware engineers
 with an fpga you can think of any digital ckt that does a certain functionality describe the circuit in something called a HDL (hardware description language) dump the code on the fpga and voila the fpga builds the ckt in real time and let&rsquo;s u play around with it the best part being u can erase your existing design and dump some new hdl to simulate another digital ckt" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.org/posts/fpga/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="http://localhost:1313/posts/fpga/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-02-17T23:40:46+05:30" />
 <meta property="article:modified_time" content="2024-02-17T23:40:46+05:30" />
 
 
 
 
-
-<link rel="canonical" href="https://example.org/posts/fpga/">
+<link rel="canonical" href="http://localhost:1313/posts/fpga/">
 
 
 <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
@@ -41,7 +40,7 @@ with an fpga you can think of any digital ckt that does a certain functionality 
 
   
   
-  <link rel="stylesheet" href="/css/coder.min.e1bdf152d93b060b06ba5d496486ed9c201a8b95d335e035beb5faebe3b61cad.css" integrity="sha256-4b3xUtk7BgsGul1JZIbtnCAai5XTNeA1vrX66&#43;O2HK0=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
 
 
 
@@ -51,7 +50,7 @@ with an fpga you can think of any digital ckt that does a certain functionality 
   
     
     
-    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
   
 
 
@@ -136,7 +135,7 @@ with an fpga you can think of any digital ckt that does a certain functionality 
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="https://example.org/posts/fpga/">
+            <a class="title-link" href="http://localhost:1313/posts/fpga/">
               FPGA-internals
             </a>
           </h1>
@@ -188,7 +187,7 @@ with an fpga you can think of any digital ckt that does a certain functionality 
 </li>
 </ol>
 <figure><img src="/images/fpga/img1.png"
-         alt="Alt text" width="600" height="500"/>
+    alt="Alt text" width="600" height="500">
 </figure>
 
 <h2 id="clb-configurable-logic-block">
@@ -199,7 +198,7 @@ with an fpga you can think of any digital ckt that does a certain functionality 
   </a>
 </h2>
 <figure><img src="/images/fpga/img2.png"
-         alt="Alt text" width="480" height="300"/>
+    alt="Alt text" width="480" height="300">
 </figure>
 
 <p>the above picture descirbes what a clb basically is it&rsquo;s a connection of  an lut a mux and a flip flop we need a flip flop in CLB to implement sequential logic and another mux to select b/w the combinational and sequential o/p</p>
@@ -212,7 +211,7 @@ with an fpga you can think of any digital ckt that does a certain functionality 
 </h3>
 <p>it&rsquo;s nothing but a 1 bit wide ram that is read by a mux to implement any digital logic the below example will give u a clear idea</p>
 <figure><img src="/images/fpga/img3.png"
-          alt="Alt text" width="650" height="600"/>
+     alt="Alt text" width="650" height="600">
  </figure>
 
 <p>so the truth table has 16 o/ps that is mapped to an sram and now we need
@@ -239,7 +238,7 @@ in solving them in this blog I&rsquo;ll be discussing the island style routing a
   </a>
 </h3>
 <figure><img src="/images/fpga/img4.png"
-         alt="Alt text" width="600" height="500"/>
+    alt="Alt text" width="600" height="500">
 </figure>
 
 <p>in this architecture the  FPGA routing network consists of horizontal and vertical routing tracks which are interconnected through switch boxes (SB). Logic blocks are connected to the routing network through connection boxes (CB)</p>
@@ -251,7 +250,7 @@ in solving them in this blog I&rsquo;ll be discussing the island style routing a
   </a>
 </h4>
 <figure><img src="/images/fpga/img5.png"
-          alt="Alt text" width="480" height="300"/>
+     alt="Alt text" width="480" height="300">
  </figure>
 
 <p>well a connection box is basically a block that connects the CLB to the routing network</p>
@@ -281,14 +280,14 @@ in solving them in this blog I&rsquo;ll be discussing the island style routing a
 <li>uni directional</li>
 </ol>
 <figure><img src="/images/fpga/img6.png"
-         alt="Alt text" width="480" height="600"/>
+    alt="Alt text" width="480" height="600">
 </figure>
 
 <ol start="2">
 <li>bi directional</li>
 </ol>
 <figure><img src="/images/fpga/img7.png"
-          alt="Alt text" width="480" height="600"/>
+     alt="Alt text" width="480" height="600">
  </figure>
 
 <h2 id="io-blocks">
@@ -363,7 +362,7 @@ in solving them in this blog I&rsquo;ll be discussing the island style routing a
 
   
   
-  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  <script src="/js/coder.js"></script>
   
 
   
