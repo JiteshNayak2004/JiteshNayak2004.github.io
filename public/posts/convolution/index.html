@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=36527&amp;path=livereload" data-no-instant defer></script>
   <title>
   convolution a systems perspective · HOME
 </title>
@@ -13,29 +13,56 @@
 
 
 <meta name="author" content="Jitesh Kumar Nayak">
-<meta name="description" content="introduction Link to heading Convolution, a versatile mathematical operation, has become a go-to tool in various domains, from image processing to Deep learning. However, its roots trace back to its initial application in system analysis and this blog is my attempt on explaining the premise as to why was convolution required in the first place and the thought process on how it was developed
-modelling systems Link to heading Think of a system as any device or setup that changes or controls something.">
+<meta name="description" content="
+  introduction
+  
+    
+    Link to heading
+  
+
+Convolution, a versatile mathematical operation, has become a go-to tool in various domains, from image processing to Deep learning. However, its roots trace back to its initial application in system analysis and this blog is my attempt on explaining the premise as to why was convolution required in the first place and the thought process on how it was developed
+
+  modelling systems
+  
+    
+    Link to heading
+  
+
+
+Think of a system as any device or setup that changes or controls something. An amplifier boosts sound, a spring bounces, and cruise control keeps your car&rsquo;s speed steady – all systems!
+we also assume that any system we are going to deal with here is linear and time invariant for easier analysis and modelling
+
+
+linear:   Twice the input gives twice the output">
 <meta name="keywords" content="personal">
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="convolution a systems perspective"/>
-<meta name="twitter:description" content="introduction Link to heading Convolution, a versatile mathematical operation, has become a go-to tool in various domains, from image processing to Deep learning. However, its roots trace back to its initial application in system analysis and this blog is my attempt on explaining the premise as to why was convolution required in the first place and the thought process on how it was developed
-modelling systems Link to heading Think of a system as any device or setup that changes or controls something."/>
-
-<meta property="og:title" content="convolution a systems perspective" />
-<meta property="og:description" content="introduction Link to heading Convolution, a versatile mathematical operation, has become a go-to tool in various domains, from image processing to Deep learning. However, its roots trace back to its initial application in system analysis and this blog is my attempt on explaining the premise as to why was convolution required in the first place and the thought process on how it was developed
-modelling systems Link to heading Think of a system as any device or setup that changes or controls something." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/posts/convolution/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-12-30T21:38:18+05:30" />
-<meta property="article:modified_time" content="2023-12-30T21:38:18+05:30" />
 
 
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="convolution a systems perspective">
+  <meta name="twitter:description" content="introduction Link to heading Convolution, a versatile mathematical operation, has become a go-to tool in various domains, from image processing to Deep learning. However, its roots trace back to its initial application in system analysis and this blog is my attempt on explaining the premise as to why was convolution required in the first place and the thought process on how it was developed
+modelling systems Link to heading Think of a system as any device or setup that changes or controls something. An amplifier boosts sound, a spring bounces, and cruise control keeps your car’s speed steady – all systems! we also assume that any system we are going to deal with here is linear and time invariant for easier analysis and modelling linear: Twice the input gives twice the output">
+
+<meta property="og:url" content="http://localhost:36527/posts/convolution/">
+  <meta property="og:site_name" content="HOME">
+  <meta property="og:title" content="convolution a systems perspective">
+  <meta property="og:description" content="introduction Link to heading Convolution, a versatile mathematical operation, has become a go-to tool in various domains, from image processing to Deep learning. However, its roots trace back to its initial application in system analysis and this blog is my attempt on explaining the premise as to why was convolution required in the first place and the thought process on how it was developed
+modelling systems Link to heading Think of a system as any device or setup that changes or controls something. An amplifier boosts sound, a spring bounces, and cruise control keeps your car’s speed steady – all systems! we also assume that any system we are going to deal with here is linear and time invariant for easier analysis and modelling linear: Twice the input gives twice the output">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-12-30T21:38:18+05:30">
+    <meta property="article:modified_time" content="2023-12-30T21:38:18+05:30">
 
 
-<link rel="canonical" href="http://localhost:1313/posts/convolution/">
 
 
-<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+<link rel="canonical" href="http://localhost:36527/posts/convolution/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
 
 
   
@@ -89,7 +116,7 @@ modelling systems Link to heading Think of a system as any device or setup that 
   
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
     </a>
 </div>
 
@@ -97,27 +124,29 @@ modelling systems Link to heading Think of a system as any device or setup that 
   <main class="wrapper">
     <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="/">
+    
+    <a class="navigation-title" href="http://localhost:36527/">
       HOME
     </a>
     
+    
       <input type="checkbox" id="menu-toggle" />
       <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
       </label>
       <ul class="navigation-list">
         
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/posts/">Blog</a>
+              <a class="navigation-link " href="/posts/">Blog</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/about/">About</a>
+              <a class="navigation-link " href="/about/">About</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/projects/">Projects</a>
+              <a class="navigation-link " href="/projects/">Projects</a>
             </li>
           
         
@@ -135,7 +164,7 @@ modelling systems Link to heading Think of a system as any device or setup that 
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="http://localhost:1313/posts/convolution/">
+            <a class="title-link" href="http://localhost:36527/posts/convolution/">
               convolution a systems perspective
             </a>
           </h1>
@@ -143,13 +172,13 @@ modelling systems Link to heading Think of a system as any device or setup that 
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
               <time datetime="2023-12-30T21:38:18&#43;05:30">
                 December 30, 2023
               </time>
             </span>
             <span class="reading-time">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
               4-minute read
             </span>
           </div>
@@ -164,7 +193,7 @@ modelling systems Link to heading Think of a system as any device or setup that 
         <h2 id="introduction">
   introduction
   <a class="heading-link" href="#introduction">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -172,7 +201,7 @@ modelling systems Link to heading Think of a system as any device or setup that 
 <h2 id="modelling-systems">
   modelling systems
   <a class="heading-link" href="#modelling-systems">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -192,7 +221,7 @@ modelling systems Link to heading Think of a system as any device or setup that 
 <h2 id="problem">
   PROBLEM
   <a class="heading-link" href="#problem">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -218,7 +247,7 @@ modelling systems Link to heading Think of a system as any device or setup that 
 <h2 id="prerequisite-the-magic-function-unit-impulse-function">
   PREREQUISITE (THE MAGIC FUNCTION) UNIT IMPULSE FUNCTION
   <a class="heading-link" href="#prerequisite-the-magic-function-unit-impulse-function">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -242,7 +271,7 @@ The name comes from the fact that the area of an impulse function is one</p>
 <h2 id="solution">
   SOLUTION
   <a class="heading-link" href="#solution">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -286,6 +315,8 @@ The name comes from the fact that the area of an impulse function is one</p>
         
         
         
+        
+        
       </footer>
     </article>
 
@@ -300,7 +331,7 @@ The name comes from the fact that the area of an impulse function is one</p>
     
       2023 -
     
-    2024
+    2026
      Jitesh Kumar Nayak 
     ·
     
@@ -352,6 +383,9 @@ The name comes from the fact that the area of an impulse function is one</p>
   
 
   
-</body>
 
+  
+
+  
+</body>
 </html>
