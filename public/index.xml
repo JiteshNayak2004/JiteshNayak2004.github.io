@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HOME</title>
-    <link>https://example.org/</link>
+    <link>http://localhost:34163/</link>
     <description>Recent content on HOME</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 03 Jan 2026 23:18:01 +0530</lastBuildDate>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:34163/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Baqaadgi</title>
-      <link>https://example.org/poetry/baqaadgi/</link>
+      <link>http://localhost:34163/poetry/baqaadgi/</link>
       <pubDate>Sat, 03 Jan 2026 23:18:01 +0530</pubDate>
-      <guid>https://example.org/poetry/baqaadgi/</guid>
-      <description>&lt;p&gt;Tumhare jazbaat ko behtar pravah (flow) aur sahi vyakaran (grammar) ke saath yahan likha gaya hai:&lt;/p&gt;&#xA;&lt;p&gt;Tumhe shayad ehsaas nahi ho raha, par waqt itni tezi se guzarta ja raha hai ki tumhe kuch mehsoos tak nahi hota. Wahi 5-6 kapde, wahi purane joote, aur wahi office se ghar tak ke raste—din kab haath se phisalte jaate hain, maloom hi nahi chalta. Is monotony mein yaaddash dhundli hoti jati hai aur saal kab guzar jata hai, pata nahi chalta. Isi tarah tum 20 se 21 ke ho gaye aur jald hi 30 ki dehleez tak pohunch jaoge.&lt;/p&gt;</description>
+      <guid>http://localhost:34163/poetry/baqaadgi/</guid>
+      <description>&lt;p&gt;Tumhe shayad ehsaas nahi ho raha, par waqt itni tezi se guzarta ja raha hai ki tumhe kuch mehsoos tak nahi hota. Wahi 5-6 kapde, wahi purane joote, aur wahi office se ghar tak ke raste—din kab haath se phisalte jaate hain, maloom hi nahi chalta. Is monotony mein yaaddash dhundli hoti jati hai aur saal kab guzar jata hai, pata nahi chalta. Isi tarah tum 20 se 21 ke ho gaye aur jald hi 30 ki dehleez tak pohunch jaoge.&lt;/p&gt;</description>
     </item>
     <item>
       <title>FPGA-internals</title>
-      <link>https://example.org/posts/fpga/</link>
+      <link>http://localhost:34163/posts/fpga/</link>
       <pubDate>Sat, 17 Feb 2024 23:40:46 +0530</pubDate>
-      <guid>https://example.org/posts/fpga/</guid>
+      <guid>http://localhost:34163/posts/fpga/</guid>
       <description>&lt;p&gt;well a lot of you must have heard of the term fpga and with some digging and youtube videos u get a picture that it is basically a minecraft equivalent for hardware engineers&lt;/p&gt;&#xA;&lt;p&gt;with an fpga you can think of any digital ckt that does a certain functionality describe the circuit in something called a HDL (hardware description language) dump the code on the fpga and voila the fpga builds the ckt in real time and let&amp;rsquo;s u play around with it the best part being u can erase your existing design and dump some new hdl to simulate another digital ckt&lt;/p&gt;</description>
     </item>
     <item>
       <title>convolution a systems perspective</title>
-      <link>https://example.org/posts/convolution/</link>
+      <link>http://localhost:34163/posts/convolution/</link>
       <pubDate>Sat, 30 Dec 2023 21:38:18 +0530</pubDate>
-      <guid>https://example.org/posts/convolution/</guid>
+      <guid>http://localhost:34163/posts/convolution/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xA;  introduction&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Convolution, a versatile mathematical operation, has become a go-to tool in various domains, from image processing to Deep learning. However, its roots trace back to its initial application in system analysis and this blog is my attempt on explaining the premise as to why was convolution required in the first place and the thought process on how it was developed&lt;/p&gt;&#xA;&lt;h2 id=&#34;modelling-systems&#34;&gt;&#xA;  modelling systems&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#modelling-systems&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Think of a system as any device or setup that changes or controls something. An amplifier boosts sound, a spring bounces, and cruise control keeps your car&amp;rsquo;s speed steady – all systems!&lt;/li&gt;&#xA;&lt;li&gt;we also assume that any system we are going to deal with here is linear and time invariant for easier analysis and modelling&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;linear:   Twice the input gives twice the output&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>https://example.org/about/</link>
+      <link>http://localhost:34163/about/</link>
       <pubDate>Fri, 19 May 2023 21:11:06 +0530</pubDate>
-      <guid>https://example.org/about/</guid>
+      <guid>http://localhost:34163/about/</guid>
       <description>&lt;p&gt;Hey there, world! I&amp;rsquo;m Jitesh Kumar Nayak, a 3rd-year undergrad at PES University. I enjoy learning and reading about everything tech. Currently, I am interested in computer architecture and analog/RFIC design and am actively trying to build cool projects in these areas.&lt;/p&gt;&#xA;&lt;p&gt;When I&amp;rsquo;m not working, I&amp;rsquo;m usually speed cubing my way to a new personal best. I&amp;rsquo;m also currently learning to solve the Rubik&amp;rsquo;s cube blindfolded and making steady progress (like, seriously, who needs to see?). I&amp;rsquo;m also neck-deep in the vat of anime, having watched over 300 already (gotta catch &amp;rsquo;em all!) including the big four, and enjoy doing so.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://example.org/projects/</link>
+      <link>http://localhost:34163/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/projects/</guid>
+      <guid>http://localhost:34163/projects/</guid>
       <description>&lt;h1 id=&#34;projects&#34;&gt;&#xA;  Projects&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#projects&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;the below are some of the projects i&amp;rsquo;ve built as a part of courses i had taken at university and hackathons i was a part of.&lt;/p&gt;&#xA;&lt;h3 id=&#34;router-placement-python-flutter&#34;&gt;&#xA;  Router Placement (Python, Flutter)&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#router-placement-python-flutter&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/JiteshNayak2004/router_placement&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Repository&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;This project aims to determine the most efficient placement of routers in a given area to ensure optimal Wi-Fi coverage. The algorithm takes into account factors such as signal strength, interference, and user density to recommend the best placement for the routers.&lt;/p&gt;</description>
     </item>
   </channel>

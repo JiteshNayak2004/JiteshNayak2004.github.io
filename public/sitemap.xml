@@ -2,35 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/poetry/baqaadgi/</loc>
+    <loc>http://localhost:34163/poetry/baqaadgi/</loc>
     <lastmod>2026-01-03T23:18:01+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/</loc>
+    <loc>http://localhost:34163/</loc>
     <lastmod>2026-01-03T23:18:01+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/poetry/</loc>
+    <loc>http://localhost:34163/poetry/</loc>
     <lastmod>2026-01-03T23:18:01+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/posts/fpga/</loc>
+    <loc>http://localhost:34163/posts/fpga/</loc>
     <lastmod>2024-02-17T23:40:46+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/posts/</loc>
+    <loc>http://localhost:34163/posts/</loc>
     <lastmod>2024-02-17T23:40:46+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/posts/convolution/</loc>
+    <loc>http://localhost:34163/posts/convolution/</loc>
     <lastmod>2023-12-30T21:38:18+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/about/</loc>
+    <loc>http://localhost:34163/about/</loc>
     <lastmod>2023-05-19T21:11:06+05:30</lastmod>
   </url><url>
-    <loc>https://example.org/projects/</loc>
+    <loc>http://localhost:34163/projects/</loc>
   </url><url>
-    <loc>https://example.org/authors/</loc>
+    <loc>http://localhost:34163/authors/</loc>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>http://localhost:34163/categories/</loc>
   </url><url>
-    <loc>https://example.org/series/</loc>
+    <loc>http://localhost:34163/series/</loc>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>http://localhost:34163/tags/</loc>
   </url>
 </urlset>
