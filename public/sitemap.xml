@@ -2,29 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:36527/posts/fpga/</loc>
+    <loc>https://example.org/poetry/baqaadgi/</loc>
+    <lastmod>2026-01-03T23:18:01+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/</loc>
+    <lastmod>2026-01-03T23:18:01+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/poetry/</loc>
+    <lastmod>2026-01-03T23:18:01+05:30</lastmod>
+  </url><url>
+    <loc>https://example.org/posts/fpga/</loc>
     <lastmod>2024-02-17T23:40:46+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:36527/</loc>
+    <loc>https://example.org/posts/</loc>
     <lastmod>2024-02-17T23:40:46+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:36527/posts/</loc>
-    <lastmod>2024-02-17T23:40:46+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:36527/posts/convolution/</loc>
+    <loc>https://example.org/posts/convolution/</loc>
     <lastmod>2023-12-30T21:38:18+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:36527/about/</loc>
+    <loc>https://example.org/about/</loc>
     <lastmod>2023-05-19T21:11:06+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:36527/projects/</loc>
+    <loc>https://example.org/projects/</loc>
   </url><url>
-    <loc>http://localhost:36527/authors/</loc>
+    <loc>https://example.org/authors/</loc>
   </url><url>
-    <loc>http://localhost:36527/categories/</loc>
+    <loc>https://example.org/categories/</loc>
   </url><url>
-    <loc>http://localhost:36527/series/</loc>
+    <loc>https://example.org/series/</loc>
   </url><url>
-    <loc>http://localhost:36527/tags/</loc>
+    <loc>https://example.org/tags/</loc>
   </url>
 </urlset>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Poetries on HOME</title>
+    <link>https://example.org/poetry/</link>
+    <description>Recent content in Poetries on HOME</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 03 Jan 2026 23:18:01 +0530</lastBuildDate>
+    <atom:link href="https://example.org/poetry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Baqaadgi</title>
+      <link>https://example.org/poetry/baqaadgi/</link>
+      <pubDate>Sat, 03 Jan 2026 23:18:01 +0530</pubDate>
+      <guid>https://example.org/poetry/baqaadgi/</guid>
+      <description>&lt;p&gt;Tumhare jazbaat ko behtar pravah (flow) aur sahi vyakaran (grammar) ke saath yahan likha gaya hai:&lt;/p&gt;&#xA;&lt;p&gt;Tumhe shayad ehsaas nahi ho raha, par waqt itni tezi se guzarta ja raha hai ki tumhe kuch mehsoos tak nahi hota. Wahi 5-6 kapde, wahi purane joote, aur wahi office se ghar tak ke raste—din kab haath se phisalte jaate hain, maloom hi nahi chalta. Is monotony mein yaaddash dhundli hoti jati hai aur saal kab guzar jata hai, pata nahi chalta. Isi tarah tum 20 se 21 ke ho gaye aur jald hi 30 ki dehleez tak pohunch jaoge.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
